@@ -59,6 +59,13 @@
       <artifactId>extentreports-cucumber7-adapter</artifactId>
       <version>1.14.0</version>
     </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.30</version> <!-- Use 1.18.22+ for JDK 17 compatibility -->
+      <scope>provided</scope>
+    </dependency>
+
 
   </dependencies>
   <build>
