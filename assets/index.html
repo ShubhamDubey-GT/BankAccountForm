@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Savings Account for User</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Open Savings Account</h2>
+  <form action="/submit-account-form" method="POST">
+    <div class="form-group">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+
+ <div class="form-group">
+      <label for="fullname">Father Name</label>
+      <input type="text" id="fathername" name="fathername" required>
+    </div>
+
+<div class="form-group">
+      <label for="fullname">Occupation</label>
+      <input type="text" id="occupation" name="occupation" required>
+    </div>
+
+<div class="form-group">
+      <label for="fullname">Company Name</label>
+      <input type="text" id="companyname" name="companyname" required>
+    </div>
+
+
+
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Mobile Number</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Residential Address</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+
+    <div class="form-group">
+      <label for="idProof">ID Proof (e.g., Passport/Driver's License)</label>
+      <input type="text" id="idProof" name="idProof" required>
+    </div>
+
+    <div class="form-group">
+      <label for="accountType">Account Type</label>
+      <select id="accountType" name="accountType" required>
+        <option value="">Select</option>
+        <option value="regular">Regular Savings</option>
+        <option value="student">Student Account</option>
+        <option value="senior">Senior Citizen</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="initialDeposit">Initial Deposit Amount ($)</label>
+      <input type="number" id="initialDeposit" name="initialDeposit" min="0" required>
+    </div>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</div>
+
+</body>
+</html>
