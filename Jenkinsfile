@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/your-org/BankAccountForm.git'
+                git branch: 'master', url: 'https://github.com/ShubhamDubey-GT/BankAccountForm.git'
             }
         }
 
